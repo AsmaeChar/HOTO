@@ -1,6 +1,6 @@
 let x = document.querySelector(".cursor");
-let density = 1,
-    number = 50; // length of the trail
+let density = 1.5,
+    number = 40; // length of the trail
 for (let i = 0; i < number; i++) {
     let y = document.createElement("div");
     y.classList.add("circle");
@@ -19,17 +19,17 @@ document.addEventListener("mousemove", ({ clientX, clientY }) => {
 });
 
 document.addEventListener("mouseover", (e) => {
-    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT') {
+    console.log(e.target.tagName)
+    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT' || e.target.tagName == 'LI' || e.target.tagName == 'IMG') {
         document.getElementById('circle').style.height = '1.5rem';
         document.getElementById('circle').style.width = '1.5rem';
-        document.getElementById('circle').style.background = '#777';
+        document.getElementById('circle').style.background = '#000';
         document.getElementById('circle').style.opacity = '0.5';
-        document.getElementById('cursor').style.background = '#fff';
     }
 });
 
 document.addEventListener("mouseout", (e) => {
-    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT') {
+    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT' || e.target.tagName == 'LI' || e.target.tagName == 'IMG') {
         document.getElementById('circle').style.height = '1rem';
         document.getElementById('circle').style.width = '1rem';
         document.getElementById('circle').style.opacity = '1';
