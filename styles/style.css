@@ -129,7 +129,7 @@ body {
     font-family: var(--text-font);
     text-decoration: none;
     color: var(--bg-negative-color2);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     margin: 0;
     font-weight: 500;
     position: relative;
@@ -169,7 +169,7 @@ body {
     text-align: center;
     margin: 25vh auto;
     color: #222222fa;
-    font-size: 6rem;
+    font-size: 7rem;
     text-shadow: 0px 0px 9px rgba(38, 38, 38, 0.57);
 }
 
@@ -200,6 +200,7 @@ body {
 
 a.btn {
     font-family: var(--text-font);
+    font-size: 1.1rem;
     text-decoration: none;
     transform: translate(100px, 0px);
     color: var(--bg-negative-color2);
