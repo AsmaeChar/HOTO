@@ -1,5 +1,5 @@
 let x = document.querySelector(".cursor");
-let density = 1.5,
+let density = 2,
     number = 40; // length of the trail
 for (let i = 0; i < number; i++) {
     let y = document.createElement("div");

@@ -68,7 +68,7 @@ body {
 .bg {
     height: 105%;
     width: 100vw;
-    background-color: #ffffff4a;
+    background-color: #ffffff25;
 }
 
 .Header {
@@ -170,7 +170,7 @@ body {
     margin: 25vh auto;
     color: #222222fa;
     font-size: 7rem;
-    text-shadow: 0px 0px 9px rgba(38, 38, 38, 0.57);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.57);
 }
 
 /* 
