@@ -4,48 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Hunt of the Ore</title>
-    <script>
-        $(document).ready(function () {
-
-            $('.btn').delay(400).queue(function (next) {
-                $(this).addClass('hover').delay(1800).queue(function (next) {
-                    $(this).removeClass('hover');
-                });
-                next();
-            });
-        });
-    </script>
 </head>
 
 <body>
     <div class="cursor"></div>
     <div class="bg">
-        <header class="Header">
-            <h3 class="Header__logo"><a class="flex" href="#"><img src="./img/LogoBlack.png" height="60px" alt="Logo" />
-                    WIKI</a></h3>
-            <div class="Header__list">
-                <ul>
-                    <li><a class="Header__link" href="#">Home</a></li>
-                    <li><a class="Header__link" href="#">About</a></li>
-                    <li><a class="Header__link" href="#">Creators</a></li>
-                    <li><a class="Header__link" href="#">Technologies</a></li>
-                    <li><a href="#" class="btn">GAMEPLAY</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="Content">
-            <div class="Content__title">
-                <h1 class="Content__title--h1">HUNT OF THE ORE</h1>
-            </div>
-            <div class="Content__info">
-                <p>uwu</p>
+        <video id="background-video" autoplay loop muted>
+            <source src="./img/Wiki.mp4" type="video/mp4">
+        </video>
+        <div class="bg">
+            <header class="Header">
+                <h3 class="Header__logo"><a class="flex" href="#"><img src="./img/LogoBlack.png" height="60px"
+                            alt="Logo" />
+                        WIKI</a></h3>
+                <div class="Header__list">
+                    <ul>
+                        <li><a class="Header__link" href="./index.html">Home</a></li>
+                        <li><a class="Header__link" href="./about.html">About</a></li>
+                        <li><a class="Header__link" href="./creators.html">Creators</a></li>
+                        <li><a class="Header__link" href="#">Technologies</a></li>
+                        <li><a href="#" class="btn">GAMEPLAY</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="Content">
+                <div class="Content__title">
+                    <h1 class="Content__title--h1">HUNT OF THE ORE</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="cursor"></div>
-    <script src="app.js"></script>
+        <div class="cursor"></div>
+        <script src="app.js"></script>
 </body>
 
 </html>
