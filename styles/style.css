@@ -253,7 +253,7 @@ a.btn.hover:after {
 }
 
 .circle {
-    --size: 0.8rem;
+    --size: 0.6rem;
     height: var(--size);
     width: var(--size);
     background-color: #000000;
@@ -265,7 +265,7 @@ a.btn.hover:after {
 }
 
 *:active .circle {
-    --size: 1.1rem;
+    --size: 1rem;
     height: var(--size);
     width: var(--size);
     opacity: 0.2;
