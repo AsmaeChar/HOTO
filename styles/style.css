@@ -37,6 +37,7 @@
 * {
     box-sizing: border-box;
     cursor: none;
+    transition: all 1s ease-in-out;
 }
 
 p {
@@ -83,19 +84,21 @@ body {
 
 .Header__logo {
     font-size: 1.9rem;
-    align-self: center;
-    margin: 0;
+    align-self: left;
+    margin: auto 0;
     font-family: var(--text-font-bold);
     transition: all 0.5s ease-in-out;
 }
 
 .Header__logo img {
+    z-index: 0;
     margin-right: 10px;
 }
 
 .Header__logo a {
     text-decoration: none;
     color: inherit;
+    z-index: 4;
 }
 
 .Header__logo:hover {
@@ -173,31 +176,6 @@ body {
     font-size: 7rem;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.57);
 }
-
-/* 
-.button:hover,
-.button:focus {
-    box-shadow: inset 10em 0 0 0 var(--bg-negative-color2);
-}
-
-
-.button {
-    font-family: var(--text-font);
-    text-decoration: none;
-    padding: 15px;
-    font-size: 1.05rem;
-    border: 1px solid var(--bg-negative-color2);
-    color: var(--bg-negative-color2);
-    transition: all 250ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
-}
-
-.button:hover,
-.button:focus {
-    transform: scaleX(1);
-    transform-origin: left;
-    border-color: var(--bg-negative-color2);
-    color: #fff;
-} */
 
 a.btn {
     font-family: var(--text-font);
