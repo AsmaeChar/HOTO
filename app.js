@@ -20,7 +20,7 @@ document.addEventListener("mousemove", ({ clientX, clientY }) => {
 
 document.addEventListener("mouseover", (e) => {
     console.log(e.target.tagName)
-    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT') {
+    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT' || e.target.tagName == 'LABEL') {
         document.getElementById('circle').style.height = '2rem';
         document.getElementById('circle').style.width = '2rem';
         document.getElementById('circle').style.background = '#000';
@@ -29,7 +29,7 @@ document.addEventListener("mouseover", (e) => {
 });
 
 document.addEventListener("mouseout", (e) => {
-    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT') {
+    if (e.target.tagName == 'A' || e.target.tagName == 'BUTTON' || e.target.tagName == 'INPUT' || e.target.tagName == 'LABEL') {
         document.getElementById('circle').style.height = '0.6rem';
         document.getElementById('circle').style.width = '0.6rem';
         document.getElementById('circle').style.opacity = '1';
