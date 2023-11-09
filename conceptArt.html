@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/extra.css">
     <title>Gallery | Hunt of the ore</title>
 </head>
@@ -27,33 +30,44 @@
                         <li><a class="Header__link" href="./creators.html">Creators</a></li>
                         <li><a class="Header__link" href="./tools.html">Tools</a></li>
                         <li><a class="Header__link" href="./conceptArt.html">Gallery</a></li>
-                        <li><a href="./development.html" class="btn">DEVELOPMENT</a></li>
+                        <li><a href="./development.html" class="btnD">DEVELOPMENT</a></li>
                     </ul>
                 </div>
             </header>
             <div class="container">
                 <h1>CONCEPT ART GALLERY</h1>
-                <input type="radio" name="slider" id="item-1" checked>
-                <input type="radio" name="slider" id="item-2">
-                <input type="radio" name="slider" id="item-3">
-                <input type="radio" name="slider" id="item-4">
-
-                <div class="cards">
-                    <label class="card" for="item-1" id="song-1">
-                        <img src="./img/edificios.png" alt="song">
-                    </label>
-                    <label class="card" for="item-2" id="song-2">
-                        <img src="./img/calle.png" alt="song">
-                    </label>
-                    <label class="card" for="item-3" id="song-3">
-                        <img src="./img/Sin título-1.png" alt="song">
-                    </label>
-                    <label class="card" for="item-4" id="song-4">
-                        <img src="./img/PORTADA.png" alt="song">
-                    </label>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./img/PORTADA.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/calle.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Mapa.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Sin título-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/edificios.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon black" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="cursor"></div>
     <script src="app.js"></script>

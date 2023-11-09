@@ -36,7 +36,6 @@
 
 * {
     box-sizing: border-box;
-    cursor: none;
     transition: all 1s ease-in-out;
 }
 
@@ -177,7 +176,7 @@ body {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.57);
 }
 
-a.btn {
+a.btnD {
     font-family: var(--text-font);
     font-size: 1.1rem;
     text-decoration: none;
@@ -193,7 +192,7 @@ a.btn {
     transition: all 0.5s cubic-bezier(0.25, 0.75, 0.5, 1);
 }
 
-a.btn:after {
+a.btnD:after {
     content: "";
     position: absolute;
     transition: all 0.5s cubic-bezier(0.25, 0.75, 0.5, 1.25);
@@ -205,13 +204,13 @@ a.btn:after {
     z-index: -1;
 }
 
-a.btn:hover,
-a.btn.hover {
+a.btnD:hover,
+a.btnD.hover {
     color: #ffffff;
 }
 
-a.btn:hover:after,
-a.btn.hover:after {
+a.btnD:hover:after,
+a.btnD.hover:after {
     width: 100%;
     right: auto;
     left: 0;
