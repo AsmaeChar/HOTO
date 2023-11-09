@@ -15,23 +15,30 @@
     text-shadow: none;
 }
 
-
 .bg {
     background: none;
 }
 
 .ContentPages {
     width: 70%;
-    margin: 2% auto;
+    margin: 1% auto;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 25px;
     font-family: 'Overpass', sans-serif;
     color: #ffffff;
 }
 
-.ContentPages p {
+.portada {
+    float: right;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    margin: 20px;
+}
+
+.ContentPages p,
+.creators p {
     margin: 20px;
     font-weight: 580;
 }
@@ -49,8 +56,121 @@ legend h1 {
 }
 
 fieldset {
+    align-self: baseline;
     border: none;
     padding: 0 30px 30px 30px;
     border-radius: 10px;
     background: #171717e0;
+}
+
+.creators {
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 25px;
+    font-family: 'Overpass', sans-serif;
+    color: #ffffff;
+    width: 100%;
+    margin: 1% auto;
+    display: flex;
+    align-items: flex-start;
+    place-content: flex-start;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.OGlogo {
+    float: right;
+    margin: 25px 0px 20px 20px;
+    border: 3px solid white;
+    display: flex;
+    border-radius: 7px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    flex-wrap: nowrap;
+    color: #171717;
+    font-family: MontserratRegular;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.OGlogo img {
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.creators fieldset ul {
+    font-size: 1.15rem;
+    list-style: none;
+    margin: 13px 0 20px 0;
+}
+
+.creators fieldset:nth-child(1) {
+    width: 52%;
+}
+
+.creators fieldset:nth-child(2) {
+    width: 37%;
+    transform: translate(0, -15px);
+}
+
+.creators fieldset {
+    height: 70vh;
+    margin: 0;
+}
+
+.creators fieldset h3 {
+    font-family: MontserratRegular;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.tech a {
+    text-decoration: none;
+}
+
+.techImg {
+    z-index: 0;
+    font-family: MontserratRegular;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #171717;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    transition: all 0.5s;
+}
+
+.techImg:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 21px 2px rgba(255, 255, 255, 0.86)
+}
+
+.techImg img {
+    z-index: 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.tools {
+    margin: 3% auto;
 }
